@@ -74,17 +74,44 @@ function percentageOfWorld1(population) {
 // console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`)
 
 // Assigment 7
-const mycoutry = {
-    country: "Germany",
-    capital: "Berlin",
-    language: "Deutsch",
-    population: 300,
-    neighbours: ["Poland", "Czech", "Belgium", "Netherlands"]
+// const mycoutry = {
+//     country: "Germany",
+//     capital: "Berlin",
+//     language: "Deutsch",
+//     population: 300,
+//     neighbours: ["Poland", "Czech", "Belgium", "Netherlands"]
+// }
+
+// console.log(`'${mycoutry.country} has ${mycoutry.population} million ${mycoutry.language}-speaking people, ${mycoutry.neighbours.length} neighbouring countries and a capital called ${mycoutry.capital}'`)
+// mycoutry.population += 2
+// console.log(mycoutry.population)
+
+// mycoutry["population"] -= 2
+// console.log(mycoutry.population)
+
+// Assigment 8
+
+michal = {
+    name: "Michał",
+    job: "Programmer",
+    birthDay: 1990,
+    driverLicense: true,
+    calcAge: function () {
+        this.age = 2025 - this.birthDay
+        return this.age
+    },
+
+    summary: function () {
+        // let diverLicenseValue
+        // if (this.driverLicense) {
+        //     diverLicenseValue = "with"
+        // } else {
+        //     driverLicense = "without"
+        // }
+
+        return `${this.name} is a ${this.calcAge()}-year ${this.job} ${this.driverLicense ? "with" : "without"} drivers license.`
+    }
 }
 
-console.log(`'${mycoutry.country} has ${mycoutry.population} million ${mycoutry.language}-speaking people, ${mycoutry.neighbours.length} neighbouring countries and a capital called ${mycoutry.capital}'`)
-mycoutry.population += 2
-console.log(mycoutry.population)
-
-mycoutry["population"] -= 2
-console.log(mycoutry.population)
+console.log(michal.summary())
+console.log(michal.age)
