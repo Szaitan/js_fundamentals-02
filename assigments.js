@@ -91,27 +91,46 @@ function percentageOfWorld1(population) {
 
 // Assigment 8
 
-michal = {
-    name: "Michał",
-    job: "Programmer",
-    birthDay: 1990,
-    driverLicense: true,
-    calcAge: function () {
-        this.age = 2025 - this.birthDay
-        return this.age
+// const michal = {
+//     name: "Michał",
+//     job: "Programmer",
+//     birthDay: 1990,
+//     driverLicense: true,
+//     calcAge: function () {
+//         this.age = 2025 - this.birthDay
+//         return this.age
+//     },
+
+//     summary: function () {
+//         // let diverLicenseValue
+//         // if (this.driverLicense) {
+//         //     diverLicenseValue = "with"
+//         // } else {
+//         //     driverLicense = "without"
+//         // }
+
+//         return `${this.name} is a ${this.calcAge()}-year ${this.job} ${this.driverLicense ? "with" : "without"} drivers license.`
+//     }
+// }
+
+// console.log(michal.summary())
+// console.log(michal.age)
+
+// Assigment 9
+const mycoutry = {
+    country: "Germany",
+    capital: "Berlin",
+    language: "Deutsch",
+    population: 300,
+    neighbours: ["Poland", "Czech", "Belgium", "Netherlands"],
+    describe: function () {
+        console.log(`'${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}'`)
     },
-
-    summary: function () {
-        // let diverLicenseValue
-        // if (this.driverLicense) {
-        //     diverLicenseValue = "with"
-        // } else {
-        //     driverLicense = "without"
-        // }
-
-        return `${this.name} is a ${this.calcAge()}-year ${this.job} ${this.driverLicense ? "with" : "without"} drivers license.`
+    checkIsIland: function () {
+        this.neighbours.length == 0 ? this.isIsland = true : this.isIsland = false
     }
 }
 
-console.log(michal.summary())
-console.log(michal.age)
+mycoutry.describe()
+mycoutry.checkIsIland()
+console.log(mycoutry.isIsland)
