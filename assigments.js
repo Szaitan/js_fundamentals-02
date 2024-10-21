@@ -117,20 +117,70 @@ function percentageOfWorld1(population) {
 // console.log(michal.age)
 
 // Assigment 9
-const mycoutry = {
-    country: "Germany",
-    capital: "Berlin",
-    language: "Deutsch",
-    population: 300,
-    neighbours: ["Poland", "Czech", "Belgium", "Netherlands"],
-    describe: function () {
-        console.log(`'${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}'`)
-    },
-    checkIsIland: function () {
-        this.neighbours.length == 0 ? this.isIsland = true : this.isIsland = false
+// const mycoutry = {
+//     country: "Germany",
+//     capital: "Berlin",
+//     language: "Deutsch",
+//     population: 300,
+//     neighbours: ["Poland", "Czech", "Belgium", "Netherlands"],
+//     describe: function () {
+//         console.log(`'${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}'`)
+//     },
+//     checkIsIland: function () {
+//         this.neighbours.length == 0 ? this.isIsland = true : this.isIsland = false
+//     }
+// }
+
+// mycoutry.describe()
+// mycoutry.checkIsIland()
+// console.log(mycoutry.isIsland)
+
+// Assigment 10
+// for(let i=1; i<=50; i++){
+//     console.log(`Voter number ${i} is currently voting.`)
+// }
+
+// Loop over arrays
+const mikeArray = [
+    "Mike", "Krepiniewicz", 2037-1990, "programmer", [1, 2 ,3] 
+]
+
+// const types = [];
+
+// for(i=0; i<=mikeArray.length-1; i++) {
+//     // One of the ways
+//     types.push(typeof(mikeArray[i]))
+//     // Second way
+//     types[i] = typeof mikeArray[i]
+//     // Reading of the array
+//     console.log(mikeArray[i], typeof(mikeArray[i]))
+// }
+
+// console.log(types)
+
+// const years = [1991, 2007, 1969, 2020]
+// const ages = []
+
+// for (i=0; i<years.length; i++) {
+//     ages.push(2037 - years[i])
+// }
+
+// console.log(ages)
+
+// continue and break
+
+for(i=0; i<mikeArray.length; i++) {
+    if(typeof mikeArray[i] !== "string") {
+        continue
+    } else {
+        console.log(mikeArray[i])
     }
 }
 
-mycoutry.describe()
-mycoutry.checkIsIland()
-console.log(mycoutry.isIsland)
+for(i=0; i<mikeArray.length; i++) {
+    if(typeof mikeArray[i] !== "string") {
+        break
+    } else {
+        console.log(mikeArray[i])
+    }
+}
