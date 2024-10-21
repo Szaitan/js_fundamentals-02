@@ -141,9 +141,9 @@ function percentageOfWorld1(population) {
 // }
 
 // Loop over arrays
-const mikeArray = [
-    "Mike", "Krepiniewicz", 2037-1990, "programmer", [1, 2 ,3] 
-]
+// const mikeArray = [
+//     "Mike", "Krepiniewicz", 2037-1990, "programmer", [1, 2 ,3] 
+// ]
 
 // const types = [];
 
@@ -169,18 +169,29 @@ const mikeArray = [
 
 // continue and break
 
-for(i=0; i<mikeArray.length; i++) {
-    if(typeof mikeArray[i] !== "string") {
-        continue
-    } else {
-        console.log(mikeArray[i])
-    }
+// for(i=0; i<mikeArray.length; i++) {
+//     if(typeof mikeArray[i] !== "string") {
+//         continue
+//     } else {
+//         console.log(mikeArray[i])
+//     }
+// }
+
+// for(i=0; i<mikeArray.length; i++) {
+//     if(typeof mikeArray[i] !== "string") {
+//         break
+//     } else {
+//         console.log(mikeArray[i])
+//     }
+// }
+
+// Assigment 11
+const populations = [1441, 200, 1600, 340]
+const array = []
+console.log(populations.length === 4)
+
+for(i=0; i<populations.length; i++) {
+    array.push(percentageOfWorld1(populations[i]))
 }
 
-for(i=0; i<mikeArray.length; i++) {
-    if(typeof mikeArray[i] !== "string") {
-        break
-    } else {
-        console.log(mikeArray[i])
-    }
-}
+console.log(array)
