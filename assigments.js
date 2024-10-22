@@ -186,12 +186,63 @@ function percentageOfWorld1(population) {
 // }
 
 // Assigment 11
-const populations = [1441, 200, 1600, 340]
-const array = []
-console.log(populations.length === 4)
+// const populations = [1441, 200, 1600, 340]
+// const percentages2 = []
+// console.log(populations.length === 4)
 
-for(i=0; i<populations.length; i++) {
-    array.push(percentageOfWorld1(populations[i]))
-}
+// for(i=0; i<populations.length; i++) {
+//     percentages2.push(percentageOfWorld1(populations[i]))
+// }
 
-console.log(array)
+// console.log(array)
+
+// Loop backwards
+// const mikeArray = [
+//     "Mike", "Krepiniewicz", 2037-1990, "programmer", [1, 2 ,3] 
+// ]
+
+// for(let i=mikeArray.length-1; i>=0; i--){
+//     console.log(mikeArray[i])
+// }
+// // Loop In loop
+// for(let excersise=1; excersise<4; excersise++) {
+//     console.log(`-----Starting exercise ${excersise}.`)
+//     for(let repetition=1; repetition<=5; repetition++){
+//         console.log(`Starting rep ${repetition}!`)
+//     }
+// }
+
+// While Loop
+// let rep = 0
+// while(rep <=10){
+//     console.log(`${rep}`)
+//     rep++
+// }
+
+// let score;
+// while(score !== 6){
+//     score = Math.trunc(Math.random()*6)+1
+//     console.log(score)
+// }
+
+// Assigment 12
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// for(i=0; i<=listOfNeighbours.length-1; i++) {
+//     for(j=0; j<=listOfNeighbours[i].length-1; j++){
+//         console.log(`Neighbour: ${listOfNeighbours[i][j]}`)
+//     }
+// }
+
+// Assigment 13
+// const populations = [1441, 200, 1600, 340]
+// const percentages3 = []
+
+// const dataLength = populations.length-1
+// let target = 0
+
+// while(target<=dataLength) {
+//     percentages3.push(percentageOfWorld1(populations[target]))
+//     target++
+// }
+// console.log(percentages3)
